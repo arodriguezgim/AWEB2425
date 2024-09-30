@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tablas en HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /*
+        th, td {
+            background-color: aquamarine;
+        }
+            */
+    </style>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <!--TABLAS EN HTML-->
+    <table style="width: 100%;">
+        <!--Primer elemento-->
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>IES</th>
+        </tr>
+        <!--Resto de elementos-->
+        <tr>
+            <td>Alberto</td>
+            <td>Rodriguez</td>
+            <td>IES Segundo de Chomon</td>
+        </tr>
+        <tr>
+            <td>Pascual</td>
+            <td>Perez</td>
+            <td>IES Segundo de Chomon</td>
+        </tr>
+        <tr>
+            <td>Lidia</td>
+            <td></td>
+            <td>IES Segundo de Chomon</td>
+        </tr>
+    </table>
+
+    <h1>Tablas personalizadas</h1>
+    <table style="width: 100%;">
+        <tr>
+            <th colspan="4">Lunes</th>
+
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">FIESTA</td>
+
+            <td>SOR</td>
+            <td>AO</td>
+        </tr>
+        <tr>
+
+            <td>MME</td>
+            <td>SI</td>
+        </tr>
+        <tr>
+            <td colspan="3">AWEB</td>
+
+            <td>SR</td>
+        </tr>
+    </table>
+</body>
+</html>
