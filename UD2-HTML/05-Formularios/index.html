@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!-- Todos los formularios van entre la etiqueta form-->
+    <form>
+        <fieldset>
+            <legend>Formulario de Registro</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre_principal" placeholder="Escribe tu Nombre">
+            </p>
+            <p>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="correo_electronico" id="email" placeholder="E-mail">
+            </p>
+            <p>
+                <label for="password">Contraseña</label>
+                <input type="password" name="contrasena" id="password" placeholder="Contraseña">
+            </p>
+        </fieldset> 
+        <fieldset>
+            <legend>Finalizar</legend>
+            <p>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Borrar todos los datos">
+            </p>
+        </fieldset> 
+    </form>
+</body>
+</html>
+
+
+
