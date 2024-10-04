@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Formularios</title>
 </head>
-<body>
+<body >
     <h1>Formularios en HTML</h1>
     <!-- Todos los formularios van entre la etiqueta form-->
     <form action="/formulario.html" method="POST">
@@ -25,10 +26,29 @@
             </p>
         </fieldset> 
         <fieldset>
+            <legend>Selecciona tu Marca de Motos Favorita</legend>
+            <label for="marcamoto">Marca de Moto:</label>
+            <select name="marca" id="marcamoto" size="1">
+                <optgroup label="Motos Italianas">
+                    <option value="aprilia">APRILIA</option>
+                    <option value="gilera">GILERA</option>
+                    <option value="ducatti">DUCATTI</option>
+                </optgroup>
+                <optgroup label="Motos Japonesas">
+                    <option value="honda">HONDA</option>
+                    <option value="yamaha">YAMAHA</option>
+                    <option value="kawasaki">KAWASAKI</option>
+                </optgroup>
+
+        
+            </select>
+        </fieldset>
+        <fieldset>
             <legend>Finalizar</legend>
             <p>
                 <input type="submit" value="Enviar Formulario">
                 <input type="reset" value="Borrar todos los datos">
+
             </p>
         </fieldset> 
     </form>
