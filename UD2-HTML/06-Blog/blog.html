@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        /*Esto de aqui es codigo CSS*/
+        #parrafo {
+            background-color: chartreuse;
+            color: red;
+        }
+
+        .articulo {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--Nunca meter un header dentro de otro header-->
+        <!--Nunca meter un header dentro de un footer-->
+        <h1>El primer Blog de Alberto</h1>
+    </header>
+    <div id="parrafo">
+        <div>
+            <div>
+                <p>Esto es un párrafo dentro de un div.</p>
+            </div>
+        </div>
+    </div>
+    <section id="bebidas">
+        <!--section define secciones de nuestra web-->
+        <article id="cafe" class="articulo">
+            <!--article define un contenido independiente-->
+            <h2>Titulo de mi Post 1</h2>
+            <p>Esta es la descripción de mi primer post. En este post voy a comentar las cosas positivas que tiene tomar café por la mañana.</p>
+            <img src="img/cafe.png" alt="" width="300px">
+            <p>Texto del artículo en el que voy a hablar de las grandes y buenas propiedades que tiene el café.</p>
+        </article>
+        <article id="horchata" class="articulo">
+            <!--article define un contenido independiente-->
+            <h2>La horchata Mejicana</h2>
+            <p>Esta es la descripción de mi primer post. En este post voy a comentar las cosas positivas que tiene tomar café por la mañana.</p>
+            <img src="img/horchata.jpg" alt="" width="300px">
+            <p>Texto del artículo en el que voy a hablar de las grandes y buenas propiedades que tiene la horchata mejicana.</p>
+        </article>
+    </section>
+    <footer id="piedepagina">
+        <!--Indica cual es nuestro pie de pagina-->
+        <p>Si te gusta mi blog, puedes contactarme en: <a href="mailto:arodriguezg@iesch.org">El correo de Alberto</a> </p>
+    </footer>
+    
+</body>
+</html>
