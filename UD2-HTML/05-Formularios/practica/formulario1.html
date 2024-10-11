@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <h1>Restaurante el Centollo</h1>
+    <h3>Haz tu reserva</h3>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="name" id="nombre">
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="mail" id="email">
+        <br>
+        <label for="tfno">Teléfono</label>
+        <input type="tel" name="phone" id="tfno">
+        <br>
+        <label for="fecha">Fecha de Reserva:</label>
+        <input type="date" name="date" id="fecha">
+        <br>
+        <label for="franja">Franja Horaria:</label>
+        <select name="franja" id="franja">
+            <option>13:00 -- 14:00</option>
+            <option>14:00 -- 15:00</option>
+            <option>20:00 -- 21:00</option>
+        </select>
+        <br>
+        <label for="comensales">Comensales (Min 1, Max 10):</label>
+        <input type="number" name="pax" id="comensales" min="1" max="10">
+        <br>
+        <label for="mantel">Color del Mantel:</label>
+        <input type="color" name="mantel" id="mantel">
+        <br>
+        <label for="demandas">Demandas especiales:</label><br>
+        <textarea name="demandas" id="demandas" placeholder="Alergias, tronas.."></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
