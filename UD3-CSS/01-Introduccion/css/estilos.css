@@ -1,0 +1,16 @@
+/* AQUI TODO NUESTRO CODIGO ES CSS */
+
+/* Selectores: Con los nombres de las etiquetas */
+ p, h1 {
+    color: yellowgreen;
+ }
+
+
+/* Esto significa todos los parrafos comprendidos dentro de div*/
+ div p {
+    color: tomato;
+ }
+
+
+ 
+
