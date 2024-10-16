@@ -1,0 +1,30 @@
+/* Selector UNIVERSAL */
+/*
+* {
+    color:  #1d4aee;
+}
+*/
+/* Selector de ETIQUETA */
+/* Selectores combinados*/
+h2, p {
+    color: green;
+    background-color: rgba(205, 134, 63, 0.2);
+}
+/*Todos los parrafos contenidos DIRECTAMENTE en un section*/
+section p {
+    color: red;
+}
+/* Selector de CLASE */
+.textoazul {
+    color: blue;
+}
+/*Selectores de IDENTIFICADOR */
+
+#articulo2 {
+    text-align: end;
+    background-color: blueviolet;
+}
+
+#articulo1 p.textoazul {
+    color: black;
+}
