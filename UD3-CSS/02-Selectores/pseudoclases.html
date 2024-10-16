@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pseudoclases</title>
+    <style>
+        button {
+            background-color: red;
+            color: aliceblue;
+            transition: background ease-in .3s;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        input {
+            background-color: blanchedalmond;
+            border-radius: 20px;
+            transition: background ease-in .6s;
+        }
+        input:focus {
+            outline: 2px solid rgb(6, 92, 222);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudoclases en CSS</h2>
+    <hr>
+    <button>Primer Botón</button>
+    <button>Pascual</button>
+    <br>
+    <br>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="pass" id="password">
+    </form>
+</body>
+</html>
