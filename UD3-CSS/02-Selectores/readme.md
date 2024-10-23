@@ -1,3 +1,308 @@
+
+### **2. Selectores básicos y combinadores en CSS**
+
+CSS tiene una amplia gama de **selectores** que nos permiten aplicar estilos a diferentes elementos en un documento HTML. Estos selectores pueden ser simples, como seleccionar por etiquetas, clases o IDs, o pueden ser más complejos, como los **combinadores**, que permiten seleccionar elementos basados en su relación con otros elementos.
+
+### **2.1. Selectores básicos**
+
+Los **selectores básicos** en CSS son fundamentales para la personalización de los elementos. Se utilizan para aplicar estilos directamente a elementos HTML basándose en sus etiquetas, clases, IDs o atributos. Aquí te presento los principales selectores básicos con ejemplos.
+
+#### **2.1.1. Selector de etiqueta o tipo (elemento)**
+
+Selecciona todos los elementos de un tipo específico (como `p`, `div`, `h1`, etc.). Este es el selector más básico en CSS.
+
+**Sintaxis**:
+```css
+elemento {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+p {
+  color: blue;
+}
+```
+Este código aplicará el color azul a todos los párrafos (`<p>`) del documento.
+
+#### **2.1.2. Selector de clase**
+
+Selecciona elementos que tienen una clase específica. Las clases se definen en el HTML con el atributo `class`. A diferencia de los IDs, varios elementos pueden compartir la misma clase, lo que permite aplicar un estilo común.
+
+**Sintaxis**:
+```css
+.nombre-clase {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+.card {
+  border: 1px solid black;
+  padding: 20px;
+}
+```
+Este código aplica un borde y un relleno a todos los elementos que tienen la clase `card`.
+
+#### **2.1.3. Selector de ID**
+
+Selecciona un elemento por su atributo `id`. A diferencia de las clases, los IDs son únicos y solo deben usarse una vez por página para un elemento específico.
+
+**Sintaxis**:
+```css
+#id-elemento {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+#header {
+  background-color: lightgray;
+  padding: 10px;
+}
+```
+Este código aplica un fondo gris claro y un `padding` al elemento con el ID `header`.
+
+#### **2.1.4. Selector universal**
+
+Selecciona todos los elementos del documento, sin importar el tipo de etiqueta o las clases. Es útil para aplicar estilos generales como márgenes, padding o la tipografía básica a todo el contenido.
+
+**Sintaxis**:
+```css
+* {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+Este código elimina los márgenes y rellenos por defecto de todos los elementos y establece el `box-sizing` para todo el documento.
+
+#### **2.1.5. Selector de atributo**
+
+Este selector aplica estilos a los elementos HTML que contienen un atributo específico. Se puede utilizar solo con la presencia de un atributo, o con valores específicos.
+
+**Sintaxis**:
+```css
+[elemento-atributo] {
+  propiedad: valor;
+}
+```
+
+**Ejemplo básico**:
+```css
+input[type="text"] {
+  border: 2px solid green;
+}
+```
+Este código aplica un borde verde a todos los elementos `input` de tipo `text`.
+
+**Ejemplo avanzado**:
+```css
+a[target="_blank"] {
+  color: red;
+}
+```
+Este código cambia el color a rojo de todos los enlaces (`<a>`) que tienen `target="_blank"`.
+
+### **2.2. Combinadores en CSS**
+
+Los **combinadores** en CSS permiten seleccionar elementos basados en su relación con otros elementos. Esto es muy útil cuando queremos aplicar estilos solo en situaciones específicas en relación con la estructura del HTML.
+
+#### **2.2.1. Combinador descendiente (espacio)**
+
+Este combinador selecciona todos los elementos descendientes de un elemento especificado. Un "descendiente" puede ser un hijo directo o un hijo más profundo dentro de la jerarquía del documento.
+
+**Sintaxis**:
+```css
+elemento1 elemento2 {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+div p {
+  color: green;
+}
+```
+Este código aplicará el color verde a todos los párrafos (`<p>`) que están dentro de un `div`, sin importar qué tan profundamente estén anidados.
+
+#### **2.2.2. Combinador hijo (`>`)**
+
+El combinador hijo selecciona solo los elementos que son hijos directos de otro elemento. Esto es útil para aplicar estilos solo a elementos que son hijos inmediatos.
+
+**Sintaxis**:
+```css
+elemento1 > elemento2 {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+ul > li {
+  list-style-type: none;
+}
+```
+Este código elimina los puntos de lista (`list-style-type`) de todos los elementos `li` que son hijos directos de una lista `ul`.
+
+#### **2.2.3. Combinador adyacente (`+`)**
+
+El combinador adyacente selecciona el primer elemento que sigue inmediatamente después de otro elemento (hermano directo en el mismo nivel).
+
+**Sintaxis**:
+```css
+elemento1 + elemento2 {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+h1 + p {
+  font-size: 18px;
+}
+```
+Este código aplica un tamaño de fuente de 18px a cualquier párrafo (`<p>`) que aparezca inmediatamente después de un encabezado `h1`.
+
+#### **2.2.4. Combinador general de hermanos (`~`)**
+
+Este combinador selecciona todos los elementos hermanos que siguen a un elemento especificado, sin importar si son adyacentes inmediatos o no.
+
+**Sintaxis**:
+```css
+elemento1 ~ elemento2 {
+  propiedad: valor;
+}
+```
+
+**Ejemplo**:
+```css
+h2 ~ p {
+  color: blue;
+}
+```
+Este código cambia el color de todos los párrafos (`<p>`) que siguen a un encabezado `h2`, sin importar si son adyacentes o no.
+
+### **2.3. Ejemplos prácticos de combinadores y selectores**
+
+A continuación, algunos ejemplos que integran los conceptos de selectores y combinadores:
+
+#### **Ejemplo 1: Lista de elementos con combinadores**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de ejemplos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <h1>Menú principal</h1>
+    <ul>
+      <li>Inicio</li>
+      <li>Sobre nosotros</li>
+      <li>Contacto</li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2>Título de contenido</h2>
+    <p>Este es un párrafo justo después del título.</p>
+    <p>Otro párrafo más abajo.</p>
+  </div>
+</body>
+</html>
+```
+
+**CSS**:
+```css
+/* Selecciona todos los elementos <li> dentro de <ul> */
+ul li {
+  font-size: 18px;
+}
+
+/* Cambia el color solo del primer párrafo después del h2 */
+h2 + p {
+  font-weight: bold;
+  color: darkblue;
+}
+
+/* Cambia el color de todos los párrafos después de h2 */
+h2 ~ p {
+  color: gray;
+}
+
+/* Elimina los puntos de las listas que son hijos directos de un <ul> */
+ul > li {
+  list-style: none;
+}
+```
+
+#### **Ejemplo 2: Selectores y combinadores en formularios**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de ejemplo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email">
+    
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+```
+
+**CSS**:
+```css
+/* Selecciona todos los inputs de tipo texto */
+input[type="text"] {
+  border: 1px solid blue;
+}
+
+/* Selecciona todos los elementos después del <label> */
+label + input {
+  margin-left: 10px;
+}
+
+/* Selecciona todos los inputs de tipo email */
+input[type="email"] {
+  border: 1px solid green;
+}
+
+/* Selecciona el botón de envío */
+button {
+  background-color: orange;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor
+
+```
+
 ### **Pseudoclases en CSS**
 
 Una pseudoclase es una palabra clave que se añade a los selectores para especificar un estado especial de los elementos seleccionados. Se utilizan para aplicar estilos a un elemento no solo en función de su nombre o clases, sino también en función de su **estado** o **posición** dentro del documento.
