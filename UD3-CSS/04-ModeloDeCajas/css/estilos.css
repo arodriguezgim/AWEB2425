@@ -1,0 +1,53 @@
+
+body {
+    background-color: rgb(248, 200, 87);
+    
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+/*------------MENU PRINCIPAL----------*/
+.menu {
+    background-color: black;
+    display: inline-flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orange;
+    padding: 10px;
+    border: 1px solid orange;
+}
+.menu a:hover {
+    background-color: aliceblue;
+    color: purple;
+    border: 1px solid white;
+}
+.menu a.active {
+    background-color: aliceblue;
+}
+/*--------REDES SOCIALES----------*/
+
+.social {
+    margin: 30px 10px;
+}
+.social a{
+    padding: 0 10px;
+    color: white;
+}
+.social a:hover {
+    color: blue;
+}
+
+/*------ Botón Suscríbete---------*/
+.boton a {
+    text-decoration: none;
+    color: white;
+    background-color: #F60707C5;
+    padding: 6px;
+    border-radius: 5px;
+}
+.boton a:hover {
+    color: #F60707C5;
+    background-color: white;
+}
