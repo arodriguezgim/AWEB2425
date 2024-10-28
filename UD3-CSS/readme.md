@@ -62,7 +62,9 @@ h1 {
 }
 ```
 
-### 4. **Modelo de Caja (Box Model)**
+[**Ejercicios de la unidad**](./03-PropiedadesCSS/ejecicios1.md)
+
+### 4. [**Modelo de Caja (Box Model)**](./04-ModeloDeCajas/readme.md)
 
 - **Concepto del modelo de caja**: Margen, borde, relleno, contenido.
 - **Propiedades clave**:
@@ -82,7 +84,9 @@ h1 {
 }
 ```
 
-### 5. **Fondos y Bordes**
+[**Ejercicios de la unidad**](./04-ModeloDeCajas/ejercicios.md)
+
+### 5. [**Fondos y Bordes**](./05-FondosyBordes/readme.md)
 
 - **Fondos**:
   - `background-color`
@@ -103,7 +107,9 @@ h1 {
 }
 ```
 
-### 6. **Posicionamiento y Display**
+[**Ejercicios de la unidad**](./05-FondosyBordes/ejercicios.md)
+
+### 6. [**Posicionamiento y Display**](./06-PosicionamientoYDisplay/readme.md)
 
 - **Tipos de display**: `block`, `inline`, `inline-block`, `none`.
 - **Propiedades de posicionamiento**:
@@ -124,6 +130,8 @@ h1 {
   left: 20px;
 }
 ```
+
+[**Ejercicios de la unidad**](./06-PosicionamientoYDisplay/ejercicios.md)
 
 ### 7. **Flexbox**
 

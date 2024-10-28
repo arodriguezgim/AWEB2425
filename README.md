@@ -1,2 +1,1 @@
-# AWEB2425
-Asignatura de Aplicaciones Web 24 - 25 de SMR
+# APLICACIONES WEB - 2º S.M.R - I.E.S Segundo de Chomón - Curso 24 25
