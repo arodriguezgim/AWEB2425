@@ -1,0 +1,15 @@
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+}
+
+.elemento {
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+    background-image: url('https://picsum.photos/200/100');
+    background-repeat: no-repeat;
+    /*background-position: 95% 50%;*/ /*center, top, right.. o por porcentajes*/
+    background-size: contain;
+}
