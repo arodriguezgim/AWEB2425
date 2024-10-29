@@ -1,0 +1,215 @@
+## 1. Introducción
+
+HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+
+"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la "World Wide Web" (Red Informática Mundial).
+
+HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las marcas HTML incluyen "elementos" especiales como `<head>`, `<title>`, `<body>`, `<header>`, `<footer>`, `<article>`, `<section>`, `<p>`, `<div>`, `<span>`, `<img>`, `<aside>`, `<audio>`, `<canvas>`, `<datalist>`, `<details>`, `<embed>`, `<nav>`, `<output>`, `<progress>`, `<video>`, `<ul>`, `<ol>`, `<li>` y muchos otros.
+
+Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por `<` y `>`. El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o una mezcla. Por ejemplo, la etiqueta `<title>` se puede escribir como `<Title>`, `<TITLE>` o de cualquier otra forma.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significa hipertexto?</summary>
+  <div class="card-body" markdown="1">
+
+Del mismo modo que un hipermercado es mejor que un mercado. El hipertexto es mejor que el texto. De manera simplificada es texto con enlaces que te llevan a otros documentos.
+
+  </div>
+</details>
+
+{:.question}
+¿Es HTML case sensitive?
+
+## 2. Estructura básica de HTML
+
+Ahora veremos cómo combinar los elementos individuales para formar una página HTML completa:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Título de la página</title>
+  </head>
+  <body>
+
+    <h1>Esto es una cabecera</h1>
+    <p>Esto es un párrafo.</p>
+
+    <p id="bienvenida">¡Bienvenido!</p>
+
+  </body>
+</html>
+```
+
+- `<!DOCTYPE html>`: El elemento doctype. En sus inicios, cuando el HTML llevaba poco tiempo (alrededor de 1991-1992), los doctypes servían como enlaces al conjunto de reglas que la página HTML debía seguir para que fuera considerado buen HTML. En la actualidad se ignora y se considera un legado histórico que hay que incluir para que todo funcione correctamente.
+- `<html></html>`: El elemento `<html>`. Este elemento envuelve todo el contenido de la página. A veces se lo conoce como el elemento raíz.
+- `<head></head>`: El elemento `<head>` (cabecera). Este elemento actúa como contenedor para todos los parámetros que quieras incluir en el documento HTML que no serán visibles a los visitantes de la página.
+- `<meta charset="utf-8">`: Este elemento establece que tu documento HTML usará la codificación UTF-8, que incluye la gran mayoría de caracteres de todos los idiomas humanos escritos.
+- `<title></title>`: El elemento `<title>`. Este establece el título de la página, que es el título que aparece en la pestaña del navegador en la que se carga la página.
+- `<body></body>`: El elemento `<body>`. Contiene todo el contenido que quieres mostrar a los usuarios cuando visitan tu página, ya sea texto, imágenes, vídeos, juegos, pistas de audio reproducibles o cualquier otra cosa.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo vemos el código HTML de una web?</summary>
+  <div class="card-body" markdown="1">
+
+F12 o Click derecho e Inspeccionar
+
+  </div>
+</details>
+
+{:.question}
+Veamos el código fuente de esta página web. ¿Tiene la estructura que se ha explicado?
+
+### 2.1. Elemento
+
+Los elementos HTML son los componentes básicos de un documento HTML. En esta página que estás leyendo, por ejemplo, el título, un párrafo y una imagen son elementos H1, P e IMG, respectivamente. No todos los tipos de elemento son visibles: algunos tienen como única función agrupar a otros elementos, por ejemplo.
+
+Exploremos un poco el elemento párrafo:
+
+![Elemento y etiquetas HTML](/assets/img/html/elementoEtiquetas.png)
+_Elemento y etiquetas HTML_
+
+Las principales partes de nuestro elemento son:
+
+- **La etiqueta de apertura**: consiste en el nombre del elemento (en este caso, p), encerrado entre paréntesis angulares de apertura y cierre. Esta etiqueta de apertura marca dónde comienza el elemento o comienza a tener efecto. En este ejemplo, precede al comienzo del texto del párrafo.
+- **El contenido**: Este es el contenido del elemento. En este ejemplo, es el texto del párrafo.
+- **La etiqueta de cierre**: Es lo mismo que la etiqueta de apertura, excepto que incluye una barra diagonal antes del nombre del elemento. Esto indica dónde termina el elemento; en este caso, dónde finaliza el párrafo. No incluir una etiqueta de cierre es un error común de principiante, y puede conducir a extraños resultados.
+  
+El **elemento** lo conforman la etiqueta de apertura, seguida del contenido, seguido de la etiqueta de cierre.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo se llama un elemento que tiene clave pero no tiene valor?</summary>
+  <div class="card-body" markdown="1">
+
+Elemento vacío.
+
+  </div>
+</details>
+
+### 2.2. Atributo
+
+Los elementos también pueden tener atributos. Los atributos tienen este aspecto:
+
+![Atributo HTML](/assets/img/html/atributo.png)
+_Atributo HTML_
+
+Los atributos contienen información extra sobre el elemento que no se mostrará en el contenido. En este caso, el atributo class asigna al elemento un identificador que se puede utilizar para dotarlo de información de estilo.
+
+Un atributo debería tener:
+
+Un espacio entre este y el nombre del elemento. (Para un elemento con más de un atributo, los atributos también deben estar separados por espacios).
+El nombre del atributo, seguido por un signo igual.
+Un valor del atributo, rodeado de comillas de apertura y cierre.
+
+
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Para que sirve el atributo alt o texto alternativo?</summary>
+  <div class="card-body" markdown="1">
+
+El atributo ALT o etiqueta ALT es un atributo HTML para un texto que describe una imagen. El atributo ALT se coloca directamente en la etiqueta de la imagen. Si una imagen no se puede mostrar por alguna razón, el atributo ALT proporciona texto alternativo para mostrar en su lugar.
+
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un atributo booleano?</summary>
+  <div class="card-body" markdown="1">
+
+Son atributos que tienen clave pero no tienen valor. Por ejemplo en este input `<input type="checkbox" name="vehicle" value="car" checked>` el atributo `checked` es booleano.
+
+Los valores true y false están especificamente prohibidos en los atributos booleanos. Para representar el valor false el atributo no debe aparecer.
+
+Todos los siguientes ejemplos son correctos y equivalentes:
+
+```html
+<input type="checkbox" name="vehicle" value="car" checked disabled>
+<input type="checkbox" name="vehicle" value="car" checked="checked" disabled="disabled">
+<input type="checkbox" name="vehicle" value="car" checked disabled="">
+```
+
+  </div>
+</details>
+
+{:.question}
+¿Es correcto el elemento `<a href=https://www.mozilla.org/>mi sitio web favorito</a>`?
+
+{:.question}
+¿Es correcto el elemento `<a href='http://www.ejemplo.com'>Un enlace a mi ejemplo.</a>`?
+
+{:.question}
+¿Es correcto el elemento `<a href='http://www.ejemplo.com' title=Es correcto o no>Un enlace a mi ejemplo.</a>`?
+
+{:.question}
+¿Es correcto el elemento `<a href="http://www.ejemplo.com" title="¿Es 'correcto'?">Un enlace a mi ejemplo.</a>`?
+
+{:.question}
+¿Es correcto el elemento `<a href='http://www.ejemplo.com' title='¿Es 'correcto'?'>Un enlace a mi ejemplo.</a>`?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un lenguaje de programación?</summary>
+  <div class="card-body" markdown="1">
+
+Un lenguaje de programación es un lenguaje formal que le proporciona a una persona, en este caso el programador, la capacidad de escribir (o programar) una serie de instrucciones o secuencias de órdenes en forma de algoritmos con el fin de controlar el comportamiento físico o lógico de un sistema informático, de manera que se puedan obtener diversas clases de datos o ejecutar determinadas tareas.
+
+A todo este conjunto de órdenes escritas mediante un lenguaje de programación se le denomina programa informático.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es HTML un lenguaje de programación?
+</summary>
+  <div class="card-body">
+
+HTML es una forma de representar la información. No programas el comportamiento de una computadora por lo tanto no es un lenguaje de programación.
+
+HTML ("Hypertext Markup Language") no es un lenguaje de programación. Es un lenguaje de marcado que le dice a los navegadores web cómo estructurar las páginas web que estás visitando. Puede ser tan complejo o tan simple como desee el desarrollador web. El HTML consiste en una serie de elementos, que puedes utilizar para encerrar, delimitar o marcar diferentes partes del contenido para hacer que aparezcan de una cierta manera, o actúen de determinada forma. Las etiquetas que delimitan un fragmento de contenido pueden hacer que dicho contenido enlace con otra página, ponga una palabra en cursiva, etcétera. Por ejemplo, dada la siguiente línea de contenido:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b6sNxnldPhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+</details>
+
+## Formularios
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tqLJoWfdqIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Cuáles son los pasos que debo seguir para poder ver que información estaría enviando a un servidor desde un formulario?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u1JRC24rUfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<details class="card mb-2">
+  <summary class="card-header"> Preguntas sobre el vídeo</summary>
+  <div class="card-body" markdown="1">
+
+1. ¿Para que sirve el elemento `label`?
+1. ¿Para que sirve el atributo for en un elemento `label`?
+1. ¿Para que sirve el atributo name en un elemento `input`?
+1. ¿Para que sirve el atributo `placeholder`?
+1. ¿Se te ocurre un caso real donde necesitemos utilizar dos elementos form dentro de un mismo html y tenga sentido?
+1. ¿Para que sirve el atributo `type="email"`?
+1. ¿Para que sirve el atributo `type="password"`? ¿Se envia la contraseña encriptada si ponemos el atributo `type="password"`?
+1. ¿El atributo `type="submit"` en que dos elementos lo podemos usar? ¿Para que sirve este atributo `type="submit"`?
+1. ¿Para qué sirve el `type="reset"`?
+1. ¿Qué tipos de input existen? text, password, email, etc.
+1. ¿Para qué sirve el atributo `name`? ¿Y el `value`?
+1. ¿El valor de los atributos debe ir siempre entre comillas dobles?
+1. ¿Qué diferencia existe entre los input `type="radio"` y `type="checkbox"`?
+1. ¿Qué diferencia hay entre el `type="date"` y `type="datetime-local"` y `type="time"`?
+1. ¿Podemos en un input con atributo `type="number"` poner números negativos? ¿Y números decimales?
+1. ¿Cuál es el atributo que hace que solo puedas elegir una opción dentro del tipo/categoría?
+1. ¿Depende el formato de la fecha de la lengua en la que escribimos el html (`<html lang="es">`)?
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## 3. Bibliografía
+
+- [HTML: Lenguaje de etiquetas de hipertexto (Developer Mozilla)](https://developer.mozilla.org/es/docs/Web/HTML)
+- [HTML Tutorial (W3Schools)](https://www.w3schools.com/html/)
+- [Lenguaje HTML5](https://lenguajehtml.com/html/introduccion/que-es-html/)
