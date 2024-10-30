@@ -104,6 +104,10 @@ El código oculta el elemento con clase `.elemento-oculto` sin afectar el diseñ
 
 La propiedad `position` permite especificar cómo y dónde debe colocarse un elemento en la página. Los valores de `position` también afectan el contexto de apilamiento de los elementos.
 
+Te dejo aquí un vídeo para que lo veas mejor:
+
+![Explicación de la propiedad position](https://www.youtube.com/watch?v=4WlOokagtR4)
+
 #### **6.2.1. `position: static`**
 
 Es el valor predeterminado. Los elementos se posicionan según el flujo normal del documento, y las propiedades de posición (`top`, `right`, `bottom`, `left`) no tienen efecto.
