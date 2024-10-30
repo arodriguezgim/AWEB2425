@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 500px;
+    height: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+.fig1, .fig2, .fig3 {
+    width: 500px;
+    height: 200px;
+}
+.fig1 {
+    background-color: aquamarine;
+    position: fixed;
+    top: 300px;
+    left: 30px;
+}
+.fig2 {
+    background-color: cornflowerblue;
+}
+.fig3 {
+    background-color: lightsalmon;
+}
