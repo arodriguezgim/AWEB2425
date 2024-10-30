@@ -106,7 +106,7 @@ La propiedad `position` permite especificar cómo y dónde debe colocarse un ele
 
 Te dejo aquí un vídeo para que lo veas mejor:
 
-![Explicación de la propiedad position](https://www.youtube.com/watch?v=4WlOokagtR4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4WlOokagtR4?si=JLevnMro8UrZ1FbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### **6.2.1. `position: static`**
 
