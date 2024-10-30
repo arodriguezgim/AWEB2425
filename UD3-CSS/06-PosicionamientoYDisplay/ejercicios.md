@@ -23,27 +23,8 @@
 
 ---
 
-#### **Ejercicio 3: Caja flexible con `display: flex`**
-1. Crea un contenedor `div` con tres elementos hijos dentro.
-2. Usa `display: flex` en el contenedor y configúralo para que los elementos se distribuyan con espacios iguales entre ellos (`justify-content: space-around`).
-3. Cambia la dirección de los elementos con `flex-direction` y observa el resultado.
 
-**Objetivos**:
-- Aplicar `display: flex` y manipular la distribución y dirección de los elementos en un contenedor flexible.
-
----
-
-#### **Ejercicio 4: Cuadrícula básica con `display: grid`**
-1. Crea un contenedor `div` que contenga cuatro elementos hijos.
-2. Usa `display: grid` en el contenedor y crea una cuadrícula de dos columnas y dos filas usando `grid-template-columns`.
-3. Ajusta el espacio entre las filas y columnas con `gap`.
-
-**Objetivos**:
-- Configurar una cuadrícula básica con `display: grid` y ajustar el espacio entre los elementos.
-
----
-
-#### **Ejercicio 5: Posicionamiento absoluto**
+#### **Ejercicio 3: Posicionamiento absoluto**
 1. Crea un contenedor `div` y dentro de él añade un elemento `span`.
 2. Da al contenedor un ancho y alto definidos y posiciónalo con `position: relative`.
 3. Aplica `position: absolute` al `span` y colócalo en la esquina inferior derecha del contenedor usando `bottom` y `right`.
@@ -53,7 +34,7 @@
 
 ---
 
-#### **Ejercicio 6: Banner fijo con `position: fixed`**
+#### **Ejercicio 4: Banner fijo con `position: fixed`**
 1. Crea un `div` en la parte superior de la página y dale un ancho del 100%.
 2. Aplica `position: fixed` para que el banner permanezca en la parte superior mientras se desplaza la página.
 3. Añade un contenido de ejemplo extenso para que puedas observar el comportamiento del banner al desplazarte.
@@ -63,7 +44,7 @@
 
 ---
 
-#### **Ejercicio 7: Superposición de elementos con `z-index` y `position: sticky`**
+#### **Ejercicio 5: Superposición de elementos con `z-index` y `position: sticky`**
 1. Crea un contenedor principal (`div`) que tenga una lista de elementos (`div` o `p`).
 2. Aplica `position: sticky` a uno de los elementos en la lista y configúralo con `top: 10px`.
 3. Añade una caja adicional con `position: absolute` en una posición fija en la página y controla la superposición con `z-index`.
