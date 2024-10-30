@@ -1,265 +1,74 @@
-## **6. Posicionamiento y Display en CSS**
 
-CSS ofrece una variedad de propiedades para organizar y manipular la disposición y el posicionamiento de los elementos en la página. Estas propiedades son fundamentales para crear diseños responsivos y visualmente atractivos.
-
----
-
-### **6.1. Propiedad `display`**
-
-La propiedad `display` especifica cómo se muestra un elemento en el flujo del documento. Los valores de `display` definen si el elemento se muestra como un bloque, en línea, como un contenedor flexible (flex) o como una cuadrícula (grid), entre otros.
-
-#### **6.1.1. `display: block`**
-
-Los elementos de bloque ocupan todo el ancho disponible y siempre empiezan en una nueva línea. Ejemplos de elementos de bloque son `<div>`, `<p>`, y `<h1>`.
-
-**Ejemplo**:
-```css
-div {
-  display: block;
-}
-```
-Este código asegura que el `div` ocupe todo el ancho de su contenedor y se muestre en una nueva línea.
-
-#### **6.1.2. `display: inline`**
-
-Los elementos en línea solo ocupan el ancho necesario y no comienzan en una nueva línea. Ejemplos de elementos en línea son `<span>`, `<a>`, y `<strong>`.
-
-**Ejemplo**:
-```css
-span {
-  display: inline;
-}
-```
-El `span` se mostrará en la misma línea que otros elementos vecinos y ocupará solo el ancho necesario.
-
-#### **6.1.3. `display: inline-block`**
-
-`inline-block` permite que el elemento se comporte como un elemento en línea (no empieza en una nueva línea) mientras que conserva propiedades de bloque, como `width` y `height`.
-
-**Ejemplo**:
-```css
-button {
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-}
-```
-Este código muestra el `button` como un elemento en línea, pero con dimensiones definidas.
-
-#### **6.1.4. `display: flex`**
-
-Con `display: flex`, los elementos hijos de un contenedor se alinean de manera flexible, lo que permite manipular su distribución, alineación y orden. Esto es útil para crear diseños responsivos y distribuciones complejas.
-
-**Ejemplo básico de flex**:
-```css
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-```
-Este ejemplo distribuye los elementos dentro de `.container` con espacios iguales entre ellos.
-
-#### **6.1.5. `display: grid`**
-
-La propiedad `display: grid` permite organizar elementos en filas y columnas, formando una cuadrícula. Se utiliza para diseños complejos de varios elementos alineados tanto en filas como en columnas.
-
-**Ejemplo básico de grid**:
-```css
-.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
-}
-```
-Este código crea una cuadrícula en `.container` con dos columnas, donde la primera ocupa una fracción (`1fr`) y la segunda el doble (`2fr`).
-
-#### **6.1.6. Otros valores de `display`**
-
-- **`none`**: Oculta el elemento por completo, quitándolo del flujo del documento.
-- **`table`, `table-row`, `table-cell`**: Estilos de visualización que permiten crear estructuras similares a las de una tabla.
-
-**Ejemplo de `display: none`**:
-```css
-.elemento-oculto {
-  display: none;
-}
-```
-El código oculta el elemento con clase `.elemento-oculto` sin afectar el diseño de los elementos adyacentes.
+### **Ejercicios: Posicionamiento y Display en CSS**
 
 ---
 
-### **6.2. Propiedad `position`**
+#### **Ejercicio 1: Elementos en bloque y en línea**
+1. Crea un archivo HTML con tres elementos: un `div`, un `span` y un párrafo (`p`).
+2. Usa CSS para que el `div` se muestre como un bloque, el `span` como en línea, y el párrafo (`p`) como un bloque.
+3. Añade un borde y un color de fondo diferente a cada uno para visualizar mejor el comportamiento de cada tipo de `display`.
 
-La propiedad `position` permite especificar cómo y dónde debe colocarse un elemento en la página. Los valores de `position` también afectan el contexto de apilamiento de los elementos.
-
-#### **6.2.1. `position: static`**
-
-Es el valor predeterminado. Los elementos se posicionan según el flujo normal del documento, y las propiedades de posición (`top`, `right`, `bottom`, `left`) no tienen efecto.
-
-**Ejemplo**:
-```css
-div {
-  position: static;
-}
-```
-
-#### **6.2.2. `position: relative`**
-
-Con `relative`, el elemento se posiciona en relación con su posición original en el flujo del documento. Esto permite moverlo mediante las propiedades `top`, `right`, `bottom`, y `left`.
-
-**Ejemplo**:
-```css
-div {
-  position: relative;
-  top: 10px;
-  left: 20px;
-}
-```
-Este código mueve el `div` 10 píxeles hacia abajo y 20 píxeles hacia la derecha, respecto a su posición original.
-
-#### **6.2.3. `position: absolute`**
-
-Un elemento con `position: absolute` se posiciona en relación con el primer elemento ancestro que tenga una posición distinta a `static`. Si no hay un ancestro posicionado, se coloca en relación con el viewport.
-
-**Ejemplo**:
-```css
-.box {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-```
-Este código coloca `.box` en la esquina superior derecha de su contenedor posicionado.
-
-#### **6.2.4. `position: fixed`**
-
-Con `fixed`, el elemento se posiciona en relación con el viewport, lo que significa que permanece en su lugar aunque la página se desplace.
-
-**Ejemplo**:
-```css
-.fixed-banner {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-}
-```
-Este código crea un banner en la parte inferior de la página que permanece fijo mientras se desplaza el contenido.
-
-#### **6.2.5. `position: sticky`**
-
-`sticky` mezcla las propiedades de `relative` y `fixed`: el elemento actúa de manera relativa hasta que alcanza una posición específica dentro del viewport, momento en el que se convierte en fijo.
-
-**Ejemplo**:
-```css
-.menu {
-  position: sticky;
-  top: 0;
-}
-```
-Este código hace que el menú se quede en la parte superior del viewport cuando se llega a él mientras se desplaza.
+**Objetivos**:
+- Comprender la diferencia entre `display: block` e `inline`.
 
 ---
 
-### **6.3. Propiedad `z-index`**
+#### **Ejercicio 2: Elemento en `inline-block`**
+1. Crea un botón (`button`) y un párrafo (`p`) en un archivo HTML.
+2. Aplica `display: inline-block` al botón y define `width` y `height` para que ocupe un tamaño específico.
+3. Añade otro botón con `display: inline` y observa la diferencia entre ambos.
 
-`z-index` controla el apilamiento de los elementos en el eje z (es decir, qué elementos aparecen delante o detrás de otros). Solo afecta a los elementos posicionados (`relative`, `absolute`, `fixed`, o `sticky`).
-
-**Ejemplo**:
-```css
-.elemento1 {
-  position: absolute;
-  z-index: 10;
-}
-
-.elemento2 {
-  position: absolute;
-  z-index: 5;
-}
-```
-En este ejemplo, `.elemento1` aparecerá delante de `.elemento2` porque su `z-index` es mayor.
+**Objetivos**:
+- Diferenciar `inline` e `inline-block` y manipular las dimensiones de elementos en línea.
 
 ---
 
-### **6.4. Ejemplo completo combinando `display` y `position`**
+#### **Ejercicio 3: Caja flexible con `display: flex`**
+1. Crea un contenedor `div` con tres elementos hijos dentro.
+2. Usa `display: flex` en el contenedor y configúralo para que los elementos se distribuyan con espacios iguales entre ellos (`justify-content: space-around`).
+3. Cambia la dirección de los elementos con `flex-direction` y observa el resultado.
 
-Aquí tienes un ejemplo que muestra cómo combinar `display` y `position` para crear una tarjeta informativa con elementos posicionados de forma flexible y con una disposición de estilo de tarjeta.
+**Objetivos**:
+- Aplicar `display: flex` y manipular la distribución y dirección de los elementos en un contenedor flexible.
 
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejemplo de Posicionamiento y Display</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="tarjeta">
-    <img class="tarjeta-imagen" src="perfil.jpg" alt="Foto de perfil">
-    <div class="tarjeta-texto">
-      <h2>Nombre de Usuario</h2>
-      <p>Descripción breve del usuario. Este es un ejemplo de cómo posicionar elementos y manipular su display en CSS.</p>
-    </div>
-  </div>
-</body>
-</html>
-```
+---
 
-**CSS**:
-```css
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f3f3f3;
-  margin: 0;
-}
+#### **Ejercicio 4: Cuadrícula básica con `display: grid`**
+1. Crea un contenedor `div` que contenga cuatro elementos hijos.
+2. Usa `display: grid` en el contenedor y crea una cuadrícula de dos columnas y dos filas usando `grid-template-columns`.
+3. Ajusta el espacio entre las filas y columnas con `gap`.
 
-.tarjeta {
-  display: flex;
-  position: relative;
-  width: 400px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
+**Objetivos**:
+- Configurar una cuadrícula básica con `display: grid` y ajustar el espacio entre los elementos.
 
-.tarjeta-imagen {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  border-radius: 50%;
-  border: 3px solid #ffffff;
-  z-index: 1;
-}
+---
 
-.tarjeta-texto {
-  padding: 20px;
-  padding-left: 130px;
-}
+#### **Ejercicio 5: Posicionamiento absoluto**
+1. Crea un contenedor `div` y dentro de él añade un elemento `span`.
+2. Da al contenedor un ancho y alto definidos y posiciónalo con `position: relative`.
+3. Aplica `position: absolute` al `span` y colócalo en la esquina inferior derecha del contenedor usando `bottom` y `right`.
 
-.tarjeta-texto h2 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #333;
-}
+**Objetivos**:
+- Usar `position: relative` y `position: absolute` para posicionar un elemento dentro de un contenedor.
 
-.tarjeta-texto p {
-  color: #666;
-}
-```
+---
 
-**Explicación del ejemplo**:
-- La `tarjeta` es un contenedor `flex` con un ancho
+#### **Ejercicio 6: Banner fijo con `position: fixed`**
+1. Crea un `div` en la parte superior de la página y dale un ancho del 100%.
+2. Aplica `position: fixed` para que el banner permanezca en la parte superior mientras se desplaza la página.
+3. Añade un contenido de ejemplo extenso para que puedas observar el comportamiento del banner al desplazarte.
 
- fijo y una sombra.
-- La imagen de perfil está posicionada con `position: absolute` para solaparse con el contenedor, y tiene un `z-index` para aparecer delante.
-- El `display: flex` y `justify-content` del cuerpo centran la tarjeta en la pantalla.
+**Objetivos**:
+- Crear un banner fijo usando `position: fixed` y comprender su relación con el viewport.
+
+---
+
+#### **Ejercicio 7: Superposición de elementos con `z-index` y `position: sticky`**
+1. Crea un contenedor principal (`div`) que tenga una lista de elementos (`div` o `p`).
+2. Aplica `position: sticky` a uno de los elementos en la lista y configúralo con `top: 10px`.
+3. Añade una caja adicional con `position: absolute` en una posición fija en la página y controla la superposición con `z-index`.
+
+**Objetivos**:
+- Usar `position: sticky` y `z-index` para crear efectos de superposición y control de visibilidad en la página.
+
+---
