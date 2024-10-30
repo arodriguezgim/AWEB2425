@@ -1,5 +1,5 @@
 
-### **2. Selectores básicos y combinadores en CSS**
+# **2. Selectores básicos y combinadores en CSS**
 
 CSS tiene una amplia gama de **selectores** que nos permiten aplicar estilos a diferentes elementos en un documento HTML. Estos selectores pueden ser simples, como seleccionar por etiquetas, clases o IDs, o pueden ser más complejos, como los **combinadores**, que permiten seleccionar elementos basados en su relación con otros elementos.
 
@@ -303,7 +303,7 @@ button {
 
 ```
 
-### **Pseudoclases en CSS**
+### **2.4 - Pseudoclases en CSS**
 
 Una pseudoclase es una palabra clave que se añade a los selectores para especificar un estado especial de los elementos seleccionados. Se utilizan para aplicar estilos a un elemento no solo en función de su nombre o clases, sino también en función de su **estado** o **posición** dentro del documento.
 
