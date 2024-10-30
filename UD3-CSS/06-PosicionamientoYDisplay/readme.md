@@ -106,7 +106,7 @@ La propiedad `position` permite especificar cómo y dónde debe colocarse un ele
 
 Te dejo aquí un vídeo para que lo veas mejor:
 
-[![Explicación de la propiedad position](https://www.youtube.com/watch?v=4WlOokagtR4/0.jpg)](https://www.youtube.com/watch?v=4WlOokagtR4)
+[![Alt text](https://img.youtube.com/vi/4WlOokagtR/0.jpg)](https://www.youtube.com/watch?v=4WlOokagtR)
 
 #### **6.2.1. `position: static`**
 
