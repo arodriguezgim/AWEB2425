@@ -133,7 +133,7 @@ h1 {
 
 [**Ejercicios de la unidad**](./06-PosicionamientoYDisplay/ejercicios.md)
 
-### 7. **Flexbox**
+[### 7. **Flexbox**](./07-Flexbox/readme.md)
 
 - **Concepto de Flexbox**: Contenedor flexible y elementos flexibles.
 - **Propiedades clave del contenedor**:
@@ -157,8 +157,9 @@ h1 {
   padding: 10px;
 }
 ```
+[**Ejercicios de la unidad**](./07-Flexbox/ejercicios.md)
 
-### 8. **Grid Layout**
+[### 8. **Grid Layout**](./08-Grid%20Layout/readme.md)
 
 - **Concepto de CSS Grid**: Creación de cuadrículas en 2 dimensiones.
 - **Propiedades del contenedor**:
