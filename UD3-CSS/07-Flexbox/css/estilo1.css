@@ -1,0 +1,42 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    border: 1px solid blue;
+    background-color: #ccc;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: column wrap;*/
+    justify-content: space-around;
+}
+
+.caja {
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    line-height: 120px;
+    text-align: center;
+}
+.caja1 {
+    background-color: aquamarine;
+}
+.caja2{
+    background-color: yellow;
+}
+.caja3{
+    background-color: lightcoral;
+}
+.caja4{
+    background-color: lightskyblue;
+}
