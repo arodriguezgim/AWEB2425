@@ -133,7 +133,7 @@ h1 {
 
 [**Ejercicios de la unidad**](./06-PosicionamientoYDisplay/ejercicios.md)
 
-[### 7. **Flexbox**](./07-Flexbox/readme.md)
+### 7. [**Flexbox**](./07-Flexbox/readme.md)
 
 - **Concepto de Flexbox**: Contenedor flexible y elementos flexibles.
 - **Propiedades clave del contenedor**:
@@ -159,7 +159,7 @@ h1 {
 ```
 [**Ejercicios de la unidad**](./07-Flexbox/ejercicios.md)
 
-[### 8. **Grid Layout**](./08-Grid%20Layout/readme.md)
+### 8. [**Grid Layout**](./08-Grid%20Layout/readme.md)
 
 - **Concepto de CSS Grid**: Creación de cuadrículas en 2 dimensiones.
 - **Propiedades del contenedor**:
@@ -183,48 +183,4 @@ h1 {
 }
 ```
 
-### 9. **Medios y Queries Responsivos**
-
-- **Medias queries**: Hacer que la web sea adaptable.
-- Sintaxis básica de media queries: `@media`.
-- Ajustes de diseño para diferentes tamaños de pantalla.
-
-**Ejemplo**:
-
-```css
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-}
-```
-
-### 10. **Animaciones y Transiciones**
-
-- **Transiciones**: `transition-property`, `transition-duration`, `transition-timing-function`.
-- **Animaciones**: `@keyframes`, `animation-name`, `animation-duration`.
-
-**Ejemplo**:
-
-```css
-.box {
-  transition: background-color 0.5s ease;
-}
-
-.box:hover {
-  background-color: yellow;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100px);
-  }
-}
-
-.slider {
-  animation: slide 2s infinite;
-}
-```
+[**Ejercicios de la unidad**](./08-Grid%20Layout/ejercicios.md)
