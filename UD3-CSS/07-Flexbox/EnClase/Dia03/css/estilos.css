@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;  
+  font-size: 20px;
+}
+body {
+    background-color: #fff59d;
+}
+
+.cabecera {
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.cabecera .logo {
+    cursor: pointer;
+}
+
+.cabecera .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.cabecera .logo img:hover {
+    transform: scale(1.2);
+}
+.cabecera .nav-links {
+    list-style: none;
+}
+.cabecera .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.cabecera .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.cabecera .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.cabecera .nav-links a:hover {
+    color: #ffbc03;
+}
+
+.cabecera .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.cabecera .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/*Puedes ver el resultado en:
+https://www.youtube.com/watch?v=jeQiN0gPIZw&t=229s*/
