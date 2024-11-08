@@ -1,0 +1,23 @@
+.container {
+    background: lightsalmon;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 100px 50px 80px;
+    gap: 10px;
+}
+
+.container div {
+    background: lightblue;
+    border: 2px solid #09f;
+    border-radius: 5px;
+}
+
+.item-1 {
+    grid-column: 1 / 3;
+}
+.item-2 {
+    grid-column: 3 / 4;
+    grid-row: -4 / -2;
+}
