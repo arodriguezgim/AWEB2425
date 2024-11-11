@@ -1,0 +1,61 @@
+.container div {
+    padding: 1em;
+    border-radius: 10px;
+}
+.container div:hover {
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1.5s;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+.item-1 {
+    background-color: aqua;
+    grid-column: 1 / 4;
+}
+.item-2{
+    background-color: #fdafaf;
+    grid-column: 4/5;
+    grid-row: 1/4;
+
+}
+.item-3{
+    background-color: #b0affd;
+    grid-column: 1/3;
+}
+.item-4{
+    background-color: #f1fdaf;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.item-5{
+    background-color: #affdd1;
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.item-6{
+    background-color: #fdafed;
+}
+.item-7{
+    background-color: #fde3af;
+}
+.item-8{
+    background-color: #affddf;
+    grid-column: 1/5;
+}
+.item-9{
+    background-color: #fdafaf;
+}
+.item-10{
+    background-color: #fdafaf;
+}
+.item-11{
+    background-color: #fdafaf;
+}
+.item-12{
+    background-color: #fdafaf;
+}
