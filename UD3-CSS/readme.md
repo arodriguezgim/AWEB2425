@@ -183,4 +183,4 @@ h1 {
 }
 ```
 
-[**Ejercicios de la unidad**](./08-Grid%20Layout/ejercicios.md)
+[**Ejercicios de la unidad**](./08-Grid%20Layout/Ejercicios/readme.md)
