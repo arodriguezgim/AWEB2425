@@ -12,12 +12,12 @@
    - Ejercicios básicos de declaración y uso de variables.
   - [Ejercicios para el alumno](./02-Variables/ejercicios.md)
 
-### **Capítulo 3: Estructuras de control de flujo (4h)**
+### [**Capítulo 3: Estructuras de control de flujo (4h)**](./03-EstructurasDeControl/readme.md)
    - Condicionales (`if`, `else`).
    - Bucles (`for`, `while`) para repetir tareas.
    - Ejercicios prácticos con condiciones y bucles en contextos simples.
 
-### **Capítulo 4: Funciones (4h)**
+### [**Capítulo 4: Funciones (4h)**](./04-Funciones/readme.md)
    - Qué es una función y por qué son útiles.
    - Creación de funciones sencillas y uso de parámetros.
    - Funciones flecha (`=>`) para simplificar código.

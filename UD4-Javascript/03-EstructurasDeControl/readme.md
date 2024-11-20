@@ -209,5 +209,7 @@ for (let i = 1; i <= 20; i++) {
 
 ### [**Ejercicios del Capítulo 3**](./ejercicios.md)
 
+### [**Practica Javascript: 50 Ejercicios**](./practica.md)
+
 
 
