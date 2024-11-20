@@ -168,7 +168,7 @@ Hola Mundo
 
 Escribe un programa para la consola que le pida al usuario un número e imprima los números desde 1 hasta el número.
 
-Por ejemplo, si el usuario ingresa el número 5, el programa de be imprimir:
+Por ejemplo, si el usuario ingresa el número 5, el programa debe imprimir:
 
 ```
 1
@@ -197,15 +197,13 @@ Escribe un programa para la consola que le pida al usuario dos números e imprim
 10
 ```
 
-Nota 1: Puedes asumir que el primer número siempre va a ser menor o igual que el segundo.
+**Nota 1:** Puedes asumir que el primer número siempre va a ser menor o igual que el segundo.
 
-Nota 2: Fíjate que se imprimen también los números en los límites, en el ejemplo el 5 y el 10.
+**Nota 2:** Fíjate que se imprimen también los números en los límites, en el ejemplo el 5 y el 10.
 
 > A patir de esta actividad, todas las actividades deben hacer uso de funciones. Por ejemplo en esta actividad la función podría llamarse `imprimeRango` y podría tener dos parámetros de entrada. Otra opción sería que la función solo resuelva el problema devolviendo con un `return` una array para luego mostrarla por pantalla.
-{:.prompt-info}
 
-{:.question}
-¿Qué quiere decir que una función es idempotente?
+**¿Qué quiere decir que una función es idempotente?**
 
 ### Actividad 17
 
