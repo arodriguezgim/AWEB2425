@@ -15,26 +15,32 @@
 ### [**Capítulo 3: Estructuras de control de flujo (4h)**](./03-EstructurasDeControl/readme.md)
    - Condicionales (`if`, `else`).
    - Bucles (`for`, `while`) para repetir tareas.
-   - Ejercicios prácticos con condiciones y bucles en contextos simples.
+   - [Ejercicios prácticos con condiciones y bucles en contextos simples.](./03-EstructurasDeControl/ejercicios.md)
+   - [Ejercicios variados y avanzados de Javascript](./03-EstructurasDeControl/practica.md)
 
 ### [**Capítulo 4: Funciones (4h)**](./04-Funciones/readme.md)
    - Qué es una función y por qué son útiles.
    - Creación de funciones sencillas y uso de parámetros.
    - Funciones flecha (`=>`) para simplificar código.
-   - Ejercicios de creación de funciones para resolver problemas básicos.
+   - [Ejercicios de creación de funciones para resolver problemas básicos.](./04-Funciones/ejercicios.md)
 
-### **Capítulo 5: Arrays y objetos básicos (3h)**
+### [**Capítulo 5: Arrays y objetos básicos (3h)**](./05-Arrays/readme.md)
    - Introducción a los arrays: lista de elementos.
    - Métodos básicos de arrays (`push`, `pop`).
    - Objetos como colección de propiedades y métodos.
-   - Ejercicios prácticos con arrays y objetos para organizar datos simples.
+   - [Ejercicios prácticos con arrays y objetos para organizar datos simples.](./05-Arrays/ejercicios.md)
 
-### **Capítulo 6: Manipulación del DOM (3h)**
+### [**Capítulo 6: Objetos en Javascript (3h)*](./06-Objetos/readme.md)
+   - Introducción a los objetos: colección de propiedades y métodos.
+   - Métodos básicos de los objetos (`Object.keys`, `Object.values`, `Object.entries`).
+   - [Ejercicios prácticos con objetos para organizar datos complejos.](./06-Objetos/ejercicios.md)
+
+### [**Capítulo 7: Manipulación del DOM (3h)**](./07-DOM/readme.md)
    - Introducción al DOM (Document Object Model).
    - Selección y modificación de elementos (`getElementById`, `querySelector`).
-   - Ejercicios de manipulación de texto e imágenes en el navegador.
+   - [Ejercicios de manipulación de texto e imágenes en el navegador.](./07-DOM/ejercicios.md)
 
-### **Capítulo 7: Eventos en JavaScript (2h)**
+### **Capítulo 8: Eventos en JavaScript (2h)**
    - Introducción a los eventos y cómo responder a ellos.
    - Eventos comunes como `click` y `input`.
    - Ejercicios para interactuar con la página mediante eventos.
