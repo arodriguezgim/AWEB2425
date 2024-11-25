@@ -1,0 +1,24 @@
+body {
+    background-color: bisque;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.b1 {
+    background-color: lightgreen;
+}
+.b2 {
+    background-color: lightcoral;
+}
+.b3{
+    background-color: lightcyan;
+}
+.b4{
+    background-color: lightgoldenrodyellow;
+}

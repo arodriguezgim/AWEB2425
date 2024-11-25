@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue
+}
+button{
+    padding: 10px;
+    background-color: lightyellow;
+    border-radius: 10px;
+    margin: 2px;
+}
