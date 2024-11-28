@@ -116,6 +116,7 @@ Entender la utilidad de las funciones en JavaScript, aprender a definirlas y lla
   ```
 
 ---
+<!--
 
 ### **4.6 Funciones como valores y anónimas**
 
@@ -197,29 +198,12 @@ function clasificarEdad(edad) {
 console.log(clasificarEdad(20)); // Salida: Adulto
 console.log(clasificarEdad(70)); // Salida: Adulto mayor
 ```
+-->
 
----
+## Practica todo esto realizando ejercicios
 
-### **Ejercicios del Capítulo 4**
-
-#### Nivel Básico
-1. Crea una función que salude con un mensaje personalizado.
-2. Escribe una función que calcule el cuadrado de un número.
-3. Implementa una función que convierta grados Celsius a Fahrenheit.
-4. Crea una función que determine si un número es positivo, negativo o cero.
-5. Escribe una función que devuelva el mayor de dos números.
-
-#### Nivel Intermedio
-6. Crea una función que calcule el factorial de un número.
-7. Escribe una función que reciba un número y devuelva `true` si es primo.
-8. Implementa una función que reciba un array de números y devuelva la suma de sus elementos.
-9. Escribe una función que calcule el promedio de un array de números.
-10. Crea una función que reciba una cadena y la devuelva invertida.
-
-#### Nivel Avanzado
-11. Escribe una función que reciba una fecha y determine si es un día laboral.
-12. Crea una función que valide un número de teléfono con un formato específico.
-13. Escribe una función que reciba un número y lo convierta a texto (ejemplo: `123` → `"ciento veintitrés"`).
+[Ejercicios de funciones](./04-Funciones/ejercicios.md)
+[Más ejercicios de repaso](./04-Funciones/ejerciciosrepaso.md)
 
 ---
 

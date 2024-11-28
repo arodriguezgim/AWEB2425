@@ -25,8 +25,10 @@
 
 - Qué es una función y por qué son útiles.
 - Creación de funciones sencillas y uso de parámetros.
-- Funciones flecha (`=>`) para simplificar código.
+<!--
+- Funciones flecha (`=>`) para simplificar código.-->
 - [Ejercicios de creación de funciones para resolver problemas básicos.](./04-Funciones/ejercicios.md)
+- [Ejercicios de repaso de funciones](./04-Funciones/ejerciciosrepaso.md)
 
 ### [**Capítulo 5: Arrays y objetos básicos (3h)**](./05-Arrays/readme.md)
 
