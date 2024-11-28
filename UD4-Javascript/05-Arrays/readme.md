@@ -35,7 +35,7 @@ console.log(frutas[2]); // Salida: naranja
    ```javascript
    let vacio = [];
    ```
-
+<!--
 #### **Verificar el tipo de un array:**
 - En JavaScript, los arrays son técnicamente objetos.
 - Para comprobar si una variable es un array:
@@ -43,7 +43,7 @@ console.log(frutas[2]); // Salida: naranja
   let esArray = Array.isArray(numeros);
   console.log(esArray); // Salida: true
   ```
-
+-->
 ---
 
 ### **5.3 Acceso y modificación de elementos**
@@ -116,7 +116,7 @@ console.log(frutas[2]); // Salida: naranja
      console.log(frutas[i]);
    }
    ```
-
+<!--
 2. **`for...of`:**
    ```javascript
    for (let fruta of frutas) {
@@ -130,11 +130,11 @@ console.log(frutas[2]); // Salida: naranja
      console.log(fruta);
    });
    ```
-
+-->
 ---
 
 ### **5.6 Métodos avanzados de arrays**
-
+<!--
 #### **Búsqueda**
 1. **`indexOf()`:** Encuentra la primera aparición de un valor.
    ```javascript
@@ -145,7 +145,7 @@ console.log(frutas[2]); // Salida: naranja
    ```javascript
    console.log(frutas.includes("uva")); // Salida: false
    ```
-
+-->
 #### **Manipulación**
 1. **`slice()`:** Devuelve una copia parcial del array.
    ```javascript
@@ -173,7 +173,7 @@ console.log(frutas[2]); // Salida: naranja
    ```
 
 ---
-
+<!--
 ### **5.7 Ejemplos Combinados**
 
 1. **Invertir un array:**
@@ -199,7 +199,7 @@ console.log(frutas[2]); // Salida: naranja
    });
    console.log(mapa); // {Hola: 2, mundo: 1, JavaScript: 1}
    ```
-
+-->
 ---
 
 

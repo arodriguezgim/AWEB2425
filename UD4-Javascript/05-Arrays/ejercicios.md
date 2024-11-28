@@ -37,7 +37,7 @@
    **Ejemplo:**  
    Entrada: `["rojo", "verde", "azul"]`  
    Salida: `true`
-
+<!--
 8. **Copiar un array**  
    - Crea un array y utiliza `slice()` para crear una copia. Modifica el original y muestra ambos.  
    **Ejemplo:**  
@@ -55,17 +55,17 @@
     **Ejemplo:**  
     Entrada: `[1, 2]`, `[3, 4]`  
     Salida: `[1, 2, 3, 4]`
-
+-->
 ---
 
-### **Ejercicios Intermedios (11-15)**
-
+### **Ejercicios Intermedios (12-15)**
+<!--
 11. **Eliminar duplicados**  
     - Escribe una función que elimine duplicados de un array usando `Set`.  
     **Ejemplo:**  
     Entrada: `[1, 2, 2, 3, 4, 4]`  
     Salida: `[1, 2, 3, 4]`
-
+-->
 12. **Filtrar números pares**  
     - Escribe una función que reciba un array de números y devuelva solo los números pares.  
     **Ejemplo:**  
@@ -92,14 +92,14 @@
 
 ---
 
-### **Ejercicios Avanzados (16-20)**
+### **Ejercicios Avanzados (16)**
 
 16. **Rotar un array**  
     - Escribe una función que mueva los elementos de un array hacia la derecha una posición.  
     **Ejemplo:**  
     Entrada: `[1, 2, 3]`  
     Salida: `[3, 1, 2]`
-
+<!--
 17. **Contar ocurrencias**  
     - Escribe una función que cuente cuántas veces aparece cada elemento en un array.  
     **Ejemplo:**  
@@ -123,6 +123,6 @@
     **Ejemplo:**  
     Entrada: `["perro", "gato", "elefante"]`  
     Salida: `{4: ["perro", "gato"], 8: ["elefante"]}`
-
+-->
 ---
 
