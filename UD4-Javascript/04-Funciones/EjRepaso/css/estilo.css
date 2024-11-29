@@ -1,0 +1,17 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+h2{
+    text-align: center;
+}
+.if {
+    padding: 5px 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 5px;
+}
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
