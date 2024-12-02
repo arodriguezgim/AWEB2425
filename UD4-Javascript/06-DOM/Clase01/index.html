@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function cambiarFondo( color ){
+            let body = document.body;
+            body.style.background = color;
+        }
+        function obNombre(){
+            let a = document.getElementById('nombre').value;
+            console.log( a);
+            document.getElementById('resultado').innerText = " Te llamas " + a;
+        }
+        function obEdad(){
+            let edad = document.getElementById('edad').value;
+            console.log( edad );
+        }
+
+    </script>
+</head>
+<body>
+    <header id="primero">
+        <h1 class="titulo">Titulo de mi web</h1>
+    </header>
+    <main id="principal">
+        <p class="parrafo">Esto es un párrafo 1</p>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <p class="parrafo">Esto es un párrafo 2</p>
+        <input type="number" id="edad" placeholder="edad">
+        <p class="parrafo">Esto es un párrafo 3</p>
+        <hr>
+        <p class="parrafo">Esto es un párrafo 4</p>
+        <button id="boton" onclick="cambiarFondo('red')">
+            Fondo Rojo
+        </button>
+        <button id="boton" onclick="cambiarFondo('green')">
+            Fondo Verde
+        </button>
+        <button id="boton" onclick="cambiarFondo('white')">
+            Fondo Blanco
+        </button>
+        <br><br><br>
+        <button onclick="obNombre()">
+            Obtener Nombre por Consola
+        </button>
+        <button onclick="obEdad()">
+            Obtener Edad por Consola
+        </button>
+        <hr>
+        <p class="resultado" id="resultado"></p>
+    </main>
+</body>
+</html>
