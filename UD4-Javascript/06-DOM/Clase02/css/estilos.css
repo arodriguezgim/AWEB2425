@@ -1,0 +1,13 @@
+.fondogris {
+    background-color: rgba(211, 211, 211, 0.496);
+}
+button {
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
